@@ -1,0 +1,56 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
+	padding-top: 80px; /* match header height */
+}
+
+
+.delete-btn {
+  color: #db2b39;
+}
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: #1e1e1e;
+	color: var(--textColor);
+}
+
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--mainColorLight);
+}
+
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+  	gap: 0.1rem;
+}

@@ -1,0 +1,161 @@
+html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Compact form styling */
+.exercise-form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1.7rem;
+}
+
+/* Input fields with placeholders only */
+.exercise-form input {
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  font-size: 1rem;
+  outline: none;
+  width: 50%;
+}
+
+.exercise-form input::placeholder {
+  color: #f2f3f4; /* Light gray */
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.exercise-form input:focus {
+  border: 2px solid #3b82f6;
+}
+
+/* Submit button spacing */
+.exercise-form button[type='submit'] {
+  height: 50px;
+  background: linear-gradient(to right, #00c851, #00a844);
+
+}
+
+/* Full-screen centered layout */
+.exercise-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #121212;
+  padding: 1rem;
+}
+
+img{
+    width: 75%;
+    height: auto;
+}
+/* Card styles */
+.card {
+  background: #1e1e1e;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  color: aliceblue;
+  max-width: 600px;
+  max-height: 650px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 0px;
+}
+
+/* Timer styling */
+.exercise-timer {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* GIF container */
+.exercise-gif-container {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.exercise-gif-container.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* GIF styling */
+.exercise-gif {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Button group */
+.exercise-button-container {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  margin-bottom: 75px;
+  bottom: 1rem;
+  transition: bottom 1s ease;
+}
+
+/* Button styling */
+.exercise-button {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  
+}
+
+.exercise-start {
+  background-color: #2563eb;
+}
+
+.exercise-start:hover {
+  background-color: #1d4ed8;
+}
+
+.exercise-stop {
+  background-color: #dc2626;
+}
+
+.exercise-stop:hover {
+  background-color: #b91c1c;
+}
+
+.exercise-stop:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .exercise-button-container{
+    margin-bottom: 120px;
+  }
+  .card {
+    margin: 0 auto;
+  }
+}
