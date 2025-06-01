@@ -24,7 +24,7 @@ function Homepage() {
   useEffect(() => {
     const fetchExerciseData = async () => {
       try {
-        const response = await fetch('http://192.168.1.17:5000/home/exercise-history', {
+        const response = await fetch('https://smabdullah.pythonanywhere.com/home/exercise-history', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: user.email }),

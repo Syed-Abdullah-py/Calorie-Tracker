@@ -15,7 +15,7 @@ function SignUp() {
     weight: ''
   })
 
-  const addr = "http://192.168.1.17:5000/signup"
+  const addr = "https://smabdullah.pythonanywhere.com/signup"
   const [message, setMessage] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const navigate = useNavigate()

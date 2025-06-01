@@ -54,7 +54,7 @@ function Exercise() {
     };
 
     try {
-        const response = await fetch('http://192.168.1.17:5000/home/exercise', {
+        const response = await fetch('https://smabdullah.pythonanywhere.com/home/exercise', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),

@@ -3,7 +3,7 @@ import '../css/Login.css'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Login() {
-    const addr = "http://192.168.1.17:5000/login"
+    const addr = "https://smabdullah.pythonanywhere.com/login"
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
